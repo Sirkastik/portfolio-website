@@ -38,12 +38,10 @@ const socials = [
 
 <template>
   <div :class="[useTheme().isDark ? 'dark' : 'light']">
-    <header
-      class="flex justify-between items-center px-6 py-6 text-[color: var(--headline)]"
-    >
+    <header class="flex justify-between items-center px-6 py-6 text-[color: var(--headline)]">
       <nuxt-link to="/" class="flex items-center gap-2">
         <SvgIcon name="musical-brain" />
-        <span>rioba</span>
+        <span>rioba.dev</span>
       </nuxt-link>
 
       <div class="links">
@@ -54,17 +52,10 @@ const socials = [
     </header>
     <article class="py-4 px-40">
       <div class="relative h-[39rem] flex justify-start items-end mb-16">
-        <div
-          :class="`rounded-md absolute inset-0 h-[32rem] w-full bg-[url(~/assets/img/bg1.jpg)] bg-cover bg-center`"
-        ></div>
-        <div
-          class="ml-12 mr-4 h-40 w-40 rounded-[50%] relative overflow-hidden outline-1 outline-red"
-        >
-          <img
-            class="w-full h-full"
-            src="~/assets/img/photo.jpg"
-            alt="My-Photo"
-          />
+        <div :class="`rounded-md absolute inset-0 h-[32rem] w-full bg-[url(~/assets/img/bg1.jpg)] bg-cover bg-center`">
+        </div>
+        <div class="ml-12 mr-4 h-40 w-40 rounded-[50%] relative overflow-hidden outline-1 outline-red">
+          <img class="w-full h-full" src="~/assets/img/photo.jpg" alt="My-Photo" />
         </div>
         <div class="mb-4">
           <h1 class="text-[2rem]">Victor Rioba</h1>
@@ -86,32 +77,39 @@ const socials = [
       </p>
 
       <div class="flex justify-around mb-16">
-        <CircularList :list="tech.tools" name="Tools" icon="code" />
+        <LazyCircularList :list="tech.tools" name="Tools" icon="code" />
 
-        <CircularList :list="tech.tech" name="Technologies" icon="briefcase" />
+        <LazyCircularList :list="tech.tech" name="Technologies" icon="briefcase" />
       </div>
 
       <h2>Work History</h2>
       <div class="work section">
         <div class="entry">
-          <span class="time">2021-06 - Current</span>
-          <h3>Front End Developer</h3>
+          <span class="time italic">2022-12 - Current</span>
+          <h3 class="text-[1.2rem]">Backend Engineer</h3>
+          <h5 class="opacity-80">Outlier.org, US(Remote)</h5>
+        </div>
+        <div class="entry">
+          <span class="time italic">2022-11 - Current</span>
+          <h3 class="text-[1.2rem]">Frontend Engineer</h3>
+          <h5 class="opacity-80">Inisev, US(Remote)</h5>
+        </div>
+        <div class="entry">
+          <span class="time italic">2022-02 - 2022-11</span>
+          <h3 class="text-[1.2rem]">Full Stack Engineer</h3>
+          <h5 class="opacity-80">Dreamax LTD, Israel(Remote)</h5>
+        </div>
+        <div class="entry">
+          <span class="time italic">2021-04 - 2022-01</span>
+          <h3 class="text-[1.2rem]">Frontend Developer</h3>
           <h5 class="opacity-80">Lotus Designs, Nairobi, Kenya</h5>
-          <span class="more">Show more</span>
-          <p class="details">
-            I do front-end web development for websites in collaboration with
-            other backend developers. I develop websites from scratch starting
-            with UI/UX development using Adobe XD and proceed to write front end
-            code using Vue JS
-          </p>
-          <span class="less">Show less</span>
         </div>
       </div>
 
       <h2>Education</h2>
       <div class="edu section">
         <div class="entry">
-          <span class="time">2018-08 - Current</span>
+          <span class="time">2018-08 - 2022-04</span>
           <h3>Bachelor of Science: Computer Science</h3>
           <h5>Moi University - Eldoret</h5>
         </div>
@@ -125,31 +123,40 @@ const socials = [
       <h2>Interests</h2>
       <div class="interests section">
         <ul>
-          <li>• Learning</li>
-          <li>• Reading</li>
-          <li>• Writing</li>
+          <li>
+          <li> • Learning</li>
+          </li>
+          <li>
+          <li> • Reading</li>
+          </li>
+          <li>
+          <li> • Writing</li>
+          </li>
         </ul>
       </div>
     </article>
     <footer>
       <div class="socials">
         <a v-for="social in socials" :href="social.link" target="_blank">
-          <SvgIcon
-            :class="{ 'invert-[50]': social.name === 'github' }"
-            :name="`logo-${social.name}`"
-          />
+          <SvgIcon :class="{ 'invert-[50]': social.name === 'github' }" :name="`logo-${social.name}`" />
         </a>
       </div>
-      &copy; Victor Rioba • 2021
+      &copy; Victor Rioba <span> • 2021</span>
     </footer>
   </div>
 </template>
 
 <style lang="css" scoped>
+.italic {
+  font-family: "Operator Mono Medium", "Source Code Pro", "SF Mono Regular",
+    sans-serif;
+}
+
 .list-enter-active,
 .list-leave-active {
   transition: all 0.5s ease;
 }
+
 .list-enter-from,
 .list-leave-to {
   opacity: 0;
@@ -160,7 +167,7 @@ const socials = [
   width: 3rem;
 }
 
-.logo > svg {
+.logo>svg {
   fill: var(--paragraph);
 }
 
@@ -222,7 +229,7 @@ header .links a:hover {
   flex-wrap: wrap;
 }
 
-.section > span {
+.section>span {
   height: 4rem;
   width: 3rem;
   display: flex;
@@ -230,15 +237,15 @@ header .links a:hover {
   justify-content: center;
 }
 
-.section span > img {
+.section span>img {
   max-height: 100%;
 }
 
-#dark .section span > img {
+#dark .section span>img {
   filter: grayscale(100%);
 }
 
-#dark .section .invert > img {
+#dark .section .invert>img {
   filter: grayscale(100%);
   filter: invert(50%);
 }
@@ -256,7 +263,7 @@ header .links a:hover {
 
 .entry {
   border-left: 2px solid var(--paragraph);
-  margin: 1rem;
+  margin: 1.5rem 1rem;
   padding: 1rem;
   position: relative;
 }
@@ -275,7 +282,6 @@ header .links a:hover {
 
 .time {
   opacity: 0.7;
-  font-weight: 500;
   font-size: 0.9em;
 }
 
@@ -292,16 +298,7 @@ footer {
   padding-bottom: 1.5rem;
 }
 
-#dark .socials span > img {
-  filter: grayscale(100%);
-}
-
-#dark .socials .invert > img {
-  filter: grayscale(100%);
-  filter: invert(50%);
-}
-
-.socials > span {
+.socials>span {
   width: 2rem;
   cursor: pointer;
 }

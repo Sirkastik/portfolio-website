@@ -26,9 +26,9 @@ onBeforeUnmount(() => {
       :class="{ active }"
     >
       <button
-        class="toggle transition duration-[1.25s] relative w-[60px] h-[60px] bg-white rounded-[50%] shadow-[0_3px_4px_rgba(0,0,0,0.15)] flex justify-center items-center text-[#333] text-[1.5em]"
+        class="toggle transition duration-[1.25s] relative w-[60px] h-[60px] rounded-[50%] flex justify-center items-center text-gray-400 text-[1.5em]"
         :class="{
-          'rotate-[360deg] shadow-[0_30px_40px_rgba(0,0,0,0.15),0_0_0_2px_#333,0_0_0_8px_#fff]':
+          'rotate-[360deg]':
             active,
         }"
       >

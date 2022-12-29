@@ -6,7 +6,7 @@
 
 <style lang="css">
 body {
-  font-family: "Operator Mono Medium", "Source Code Pro", "SF Mono Regular",
+  font-family: "SF Mono Regular", "Operator Mono Medium", "Source Code Pro", "SF Mono Regular",
     sans-serif;
   font-variant-ligatures: normal;
   scroll-behavior: smooth;
