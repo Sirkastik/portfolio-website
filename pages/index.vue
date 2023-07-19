@@ -34,9 +34,29 @@ const socials = [
     link: "https://www.upwork.com/freelancers/~013fdb2112c2d21183",
   },
 ] as const;
+
+const metaTitle = 'Portfolio • Victor Rioba'
+
+const metaDesc = "Victor Rioba's portfolio website. Get in touch with me"
+
+const metaTags = "Software Engineers, Web Developers, Vue.js, Node.js"
+
+const appUrl = 'https://rioba.dev'
 </script>
 
 <template>
+  <Head>
+    <Title>{{ metaTitle }}</Title>
+    <Meta property="og:url" :content="appUrl" />
+    <Meta property="og:title" :content="metaTitle" />
+    <Meta property="og:description" :content="metaDesc" />
+    <Meta property="og:image" content="https://www.rioba.dev/_nuxt/photo.00f71199.jpg" />
+    <Meta name="description" :content="metaDesc" />
+    <Meta name="twitter:title" :content="metaTitle" />
+    <Meta name="twitter:description" :content="metaDesc" />
+    <Link rel="canonical" :href="appUrl" />
+    <Meta name="tags" :content="metaTags" />
+  </Head>
   <div :class="[useTheme().isDark ? 'dark' : 'light']">
     <header class="flex justify-between items-center px-6 py-6 text-[color: var(--headline)]">
       <nuxt-link to="/" class="flex items-center gap-2">
