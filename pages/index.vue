@@ -7,7 +7,7 @@ const tags = "Software Engineer, Web Developer, Vue.js, Node.js";
 
 const url = "https://rioba.dev";
 
-const image = `${url}/_nuxt/img.680323c3.webp`;
+const image = "https://rioba.dev/_nuxt/photo.46dbc1fa.webp";
 </script>
 
 <template>
@@ -38,7 +38,9 @@ const image = `${url}/_nuxt/img.680323c3.webp`;
     </header>
 
     <article class="">
-      <div class="relative h-[19rem] md:h-[39rem] flex justify-start items-end mb-4">
+      <div
+        class="relative h-[19rem] md:h-[39rem] flex justify-start items-end mb-4"
+      >
         <div
           :class="`absolute inset-0 h-[13rem] lg:h-[32rem] w-full bg-[url(@/assets/img/bg-small.webp)] lg:bg-[url(@/assets/img/bg.webp)] bg-cover bg-center`"
         ></div>
@@ -57,7 +59,9 @@ const image = `${url}/_nuxt/img.680323c3.webp`;
             <icon-case />
             <span>Software Engineer</span>
           </span>
-          <span class="text-gray-400 font-semibold text-sm flex gap-1 items-center">
+          <span
+            class="text-gray-400 font-semibold text-sm flex gap-1 items-center"
+          >
             <icon-location /> Kenya • Remote
           </span>
         </div>
