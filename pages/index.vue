@@ -53,8 +53,8 @@ const image = "https://rioba.dev/_nuxt/photo.46dbc1fa.webp";
             alt="My-Photo"
           />
         </div>
-        <div class="md:mb-4 flex flex-col gap-2">
-          <h1 class="text-[1.75em] font-semibold">Victor Rioba</h1>
+        <div class="md:mb-4 flex flex-col gap-1 md:gap-2">
+          <h1 class="text-[1.5rem] md:text-[1.75em] font-semibold">Victor Rioba</h1>
           <span class="flex gap-1 items-center text-gray-500">
             <icon-case />
             <span>Software Engineer</span>
@@ -67,7 +67,7 @@ const image = "https://rioba.dev/_nuxt/photo.46dbc1fa.webp";
         </div>
       </div>
 
-      <p class="px-4 text-gray-600 py-2">
+      <p class="px-4 text-gray-600 py-2 text-sm">
         Software Engineer with experience in Vue.js, Nuxt.js, TailwindCSS on the
         frontend. I have expert knowledge in MySQL and Postgres, Redis, Express
         with Node.js in the backend. I also have deep understanding in tools
