@@ -1,18 +1,21 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  ssr: true,
-  modules: [
-    "@nuxtjs/tailwindcss",
-    "@pinia/nuxt",
-    "nuxt-svg-transformer",
-    [
-      "@vueuse/nuxt",
-      {
-        ssrHandlers: true,
+  app: {
+    head: {
+      title: "Portfolio • Victor Rioba",
+      htmlAttrs: {
+        lang: "en",
       },
-    ],
-  ],
-  components: {
-    dirs: ["~/components"],
+      link: [
+        {
+          rel: "icon",
+          type: "image/png",
+          href: "/favicon.png",
+        },
+      ],
+    },
   },
+  css: ["@/assets/css/main.css"],
+  modules: ["@nuxtjs/tailwindcss"],
+  devtools: { enabled: true },
 });
