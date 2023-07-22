@@ -38,26 +38,26 @@ const image = `${url}/_nuxt/img.680323c3.webp`;
     </header>
 
     <article class="">
-      <div class="relative h-[39rem] flex justify-start items-end mb-4">
+      <div class="relative h-[19rem] md:h-[39rem] flex justify-start items-end mb-4">
         <div
-          :class="`absolute inset-0 h-[32rem] w-full bg-[url(@/assets/img/bg.webp)] bg-cover bg-center`"
+          :class="`absolute inset-0 h-[13rem] lg:h-[32rem] w-full bg-[url(@/assets/img/bg-small.webp)] lg:bg-[url(@/assets/img/bg.webp)] bg-cover bg-center`"
         ></div>
         <div
           class="ml-7 mr-4 h-40 w-40 rounded-[50%] relative overflow-hidden outline-1 outline-red"
         >
           <img
             class="w-full h-full"
-            src="@/assets/img/img.webp"
+            src="@/assets/img/photo.webp"
             alt="My-Photo"
           />
         </div>
-        <div class="mb-4 flex flex-col gap-2">
+        <div class="md:mb-4 flex flex-col gap-2">
           <h1 class="text-[1.75em] font-semibold">Victor Rioba</h1>
           <span class="flex gap-1 items-center text-gray-500">
             <icon-case />
             <span>Software Engineer</span>
           </span>
-          <span class="text-gray-400 text-sm flex gap-1 items-center">
+          <span class="text-gray-400 font-semibold text-sm flex gap-1 items-center">
             <icon-location /> Kenya • Remote
           </span>
         </div>
@@ -129,7 +129,7 @@ const image = `${url}/_nuxt/img.680323c3.webp`;
         <icon-brief /> Work History
       </h2>
       <div class="px-4 flex flex-col gap-6 pt-4 pb-4">
-        <div class="border-l-4 pl-2">
+        <div class="border-l-4 pl-4 md:pl-6">
           <span class="flex justify-between">
             <h3 class="font-bold">Backend Engineer</h3>
             <span class="text-xs text-gray-500 font-semibold"
@@ -145,7 +145,7 @@ const image = `${url}/_nuxt/img.680323c3.webp`;
           <a
             href="https://www.outlier.org/"
             target="_blank"
-            class="text-sm text-gray-400 font-semibold pt-3 flex"
+            class="text-sm text-gray-400 font-semibold pt-3 flex pl-2"
             >https://www.outlier.org/</a
           >
           <p class="text-sm p-2">
@@ -160,7 +160,7 @@ const image = `${url}/_nuxt/img.680323c3.webp`;
           </p>
         </div>
 
-        <div class="border-l-4 pl-2">
+        <div class="border-l-4 pl-4 md:pl-6">
           <span class="flex justify-between">
             <h3 class="font-bold">Frontend Engineer</h3>
             <span class="text-xs text-gray-500 font-semibold"
@@ -176,7 +176,7 @@ const image = `${url}/_nuxt/img.680323c3.webp`;
           <a
             href="https://follow.it/"
             target="_blank"
-            class="text-sm text-gray-400 font-semibold pt-3 flex"
+            class="text-sm text-gray-400 font-semibold pt-3 flex pl-2"
             >https://follow.it/</a
           >
           <p class="text-sm p-2">
@@ -187,7 +187,7 @@ const image = `${url}/_nuxt/img.680323c3.webp`;
           </p>
         </div>
 
-        <div class="border-l-4 pl-2">
+        <div class="border-l-4 pl-4 md:pl-6">
           <span class="flex justify-between">
             <h3 class="font-bold">Fullstack Engineer</h3>
             <span class="text-xs text-gray-500 font-semibold"
@@ -203,7 +203,7 @@ const image = `${url}/_nuxt/img.680323c3.webp`;
           <a
             href="https://illo.ai/"
             target="_blank"
-            class="text-sm text-gray-400 font-semibold pt-3 flex"
+            class="text-sm text-gray-400 font-semibold pt-3 flex pl-2"
             >https://illo.ai/</a
           >
           <p class="text-sm p-2">
@@ -221,7 +221,7 @@ const image = `${url}/_nuxt/img.680323c3.webp`;
           </p>
         </div>
 
-        <div class="border-l-4 pl-2">
+        <div class="border-l-4 pl-4 md:pl-6">
           <span class="flex justify-between">
             <h3 class="font-bold">Frontend Engineer</h3>
             <span class="text-xs text-gray-500 font-semibold"
@@ -237,7 +237,7 @@ const image = `${url}/_nuxt/img.680323c3.webp`;
           <a
             href="https://kreuzbergkinder.com/"
             target="_blank"
-            class="text-sm text-gray-400 font-semibold pt-3 flex"
+            class="text-sm text-gray-400 font-semibold pt-3 flex pl-2"
             >https://kreuzbergkinder.com/</a
           >
           <p class="text-sm p-2">
