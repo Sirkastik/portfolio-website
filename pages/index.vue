@@ -7,7 +7,7 @@ const tags = "Software Engineer, Web Developer, Vue.js, Node.js";
 
 const url = "https://rioba.dev";
 
-const image = `${url}/_nuxt/assets/img/img.webp`;
+const image = `${url}/_nuxt/img.680323c3.webp`;
 </script>
 
 <template>
