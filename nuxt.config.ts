@@ -6,6 +6,16 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: "en",
       },
+      meta: [
+        {
+          name: "description",
+          content: "Victor Rioba's portfolio website. Get in touch with me",
+        },
+        {
+          name: "tags",
+          content: "Software Engineer, Web Developer, Vue.js, Node.js",
+        }
+      ],
       link: [
         {
           rel: "icon",

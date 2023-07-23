@@ -3,27 +3,25 @@ const title = "Portfolio • Victor Rioba";
 
 const description = "Victor Rioba's portfolio website. Get in touch with me";
 
-const tags = "Software Engineer, Web Developer, Vue.js, Node.js";
-
 const url = "https://rioba.dev";
 
 const image = "https://rioba.dev/_nuxt/photo.46dbc1fa.webp";
+
+useSeoMeta({
+  title: title,
+  ogTitle: title,
+  description: description,
+  ogUrl: url,
+  ogDescription: description,
+  ogImage: image,
+  twitterCard: "summary",
+  twitterTitle: title,
+  twitterDescription: description,
+  twitterImage: image,
+});
 </script>
 
 <template>
-  <Head>
-    <Meta property="og:url" :content="url" />
-    <Meta property="og:title" :content="title" />
-    <Meta property="og:description" :content="description" />
-    <Meta property="og:image" :content="image" />
-    <Meta property="twitter:image" :content="image" />
-    <Meta name="description" :content="description" />
-    <Meta name="twitter:title" :content="title" />
-    <Meta name="twitter:description" :content="description" />
-    <Meta name="twitter:card" :content="description" />
-    <Link rel="canonical" :href="url" />
-    <Meta name="tags" :content="tags" />
-  </Head>
   <div class="max-w-[800px] mx-auto md:shadow">
     <header class="flex justify-between items-center px-4 py-4">
       <nuxt-link to="/" class="flex items-center gap-1">
@@ -54,8 +52,10 @@ const image = "https://rioba.dev/_nuxt/photo.46dbc1fa.webp";
           />
         </div>
         <div class="md:mb-4 flex flex-col gap-1 md:gap-2">
-          <h1 class="text-[1.5rem] md:text-[1.75em] font-semibold">Victor Rioba</h1>
-          <span class="flex gap-1 items-center text-gray-500">
+          <h1 class="text-[1.5rem] md:text-[1.75em] font-semibold">
+            Victor Rioba
+          </h1>
+          <span class="flex gap-1 items-center text-[.9rem] text-gray-500">
             <icon-case />
             <span>Software Engineer</span>
           </span>
@@ -74,20 +74,20 @@ const image = "https://rioba.dev/_nuxt/photo.46dbc1fa.webp";
         such as Git, Docker and Cloud Platforms.
       </p>
 
-      <h2
+      <span
         class="font-bold mt-4 border-t pt-4 flex justify-between px-4 items-center"
       >
         <span class="flex gap-2 items-center">
           <icon-calendar /> Years of exp.
         </span>
         <span class="text-gray-500">3+ years</span>
-      </h2>
+      </span>
 
-      <h2 class="font-bold mt-4 border-t pt-6 px-4 flex gap-2 items-center">
+      <span class="font-bold mt-4 border-t pt-6 px-4 flex gap-2 items-center">
         <icon-skills /> Technical Skills
-      </h2>
+      </span>
       <div class="px-4 flex flex-col gap-4 pt-4 pb-4">
-        <h3 class="font-semibold text-gray-600">Backend:</h3>
+        <span class="font-semibold text-gray-600">Backend:</span>
         <ul class="flex flex-col gap-2">
           <li class="pl-4 flex items-center gap-2 text-[.9em] text-gray-600">
             <icon-node /> Node.js (Express)
@@ -109,7 +109,7 @@ const image = "https://rioba.dev/_nuxt/photo.46dbc1fa.webp";
           </li>
         </ul>
 
-        <h3 class="font-semibold text-gray-600">Frontend:</h3>
+        <span class="font-semibold text-gray-600">Frontend:</span>
         <ul class="flex flex-col gap-2">
           <li class="pl-4 flex items-center gap-2 text-[.9em] text-gray-600">
             <icon-vue /> Vue.js (Nuxt, Vuex, Pinia, Vue-Router)
@@ -129,21 +129,21 @@ const image = "https://rioba.dev/_nuxt/photo.46dbc1fa.webp";
         </ul>
       </div>
 
-      <h2 class="font-bold mt-4 border-t pt-6 px-4 flex gap-2 items-center">
+      <span class="font-bold mt-4 border-t pt-6 px-4 flex gap-2 items-center">
         <icon-brief /> Work History
-      </h2>
+      </span>
       <div class="px-4 flex flex-col gap-6 pt-4 pb-4">
         <div class="border-l-4 pl-4 md:pl-6">
           <span class="flex justify-between">
-            <h3 class="font-bold">Backend Engineer</h3>
+            <span class="font-bold">Backend Engineer</span>
             <span class="text-xs text-gray-500 font-semibold"
               >Dec 2022 - Present</span
             >
           </span>
           <span class="flex justify-between">
-            <h5 class="text-sm text-gray-500 font-semibold">
+            <span class="text-sm text-gray-500 font-semibold">
               Outlier.org, US(Remote)
-            </h5>
+            </span>
             <span class="text-xs text-gray-500 font-semibold">8 mos</span>
           </span>
           <a
@@ -166,15 +166,15 @@ const image = "https://rioba.dev/_nuxt/photo.46dbc1fa.webp";
 
         <div class="border-l-4 pl-4 md:pl-6">
           <span class="flex justify-between">
-            <h3 class="font-bold">Frontend Engineer</h3>
+            <span class="font-bold">Frontend Engineer</span>
             <span class="text-xs text-gray-500 font-semibold"
               >Nov 2022 - Present</span
             >
           </span>
           <span class="flex justify-between">
-            <h5 class="text-sm text-gray-500 font-semibold">
+            <span class="text-sm text-gray-500 font-semibold">
               Inisev, US(Remote)
-            </h5>
+            </span>
             <span class="text-xs text-gray-500 font-semibold">9 mos</span>
           </span>
           <a
@@ -199,9 +199,9 @@ const image = "https://rioba.dev/_nuxt/photo.46dbc1fa.webp";
             >
           </span>
           <span class="flex justify-between">
-            <h5 class="text-sm text-gray-500 font-semibold">
+            <span class="text-sm text-gray-500 font-semibold">
               Dreamax, Israel(Remote)
-            </h5>
+            </span>
             <span class="text-xs text-gray-500 font-semibold">10 mos</span>
           </span>
           <a
@@ -227,15 +227,15 @@ const image = "https://rioba.dev/_nuxt/photo.46dbc1fa.webp";
 
         <div class="border-l-4 pl-4 md:pl-6">
           <span class="flex justify-between">
-            <h3 class="font-bold">Frontend Engineer</h3>
+            <span class="font-bold">Frontend Engineer</span>
             <span class="text-xs text-gray-500 font-semibold"
               >Apr 2021 - Jan 2022</span
             >
           </span>
           <span class="flex justify-between">
-            <h5 class="text-sm text-gray-500 font-semibold">
+            <span class="text-sm text-gray-500 font-semibold">
               Lotus Designs, Kenya
-            </h5>
+            </span>
             <span class="text-xs text-gray-500 font-semibold">11 mos</span>
           </span>
           <a
@@ -255,39 +255,43 @@ const image = "https://rioba.dev/_nuxt/photo.46dbc1fa.webp";
         </div>
       </div>
 
-      <h2 class="font-bold mt-4 border-t pt-6 px-4 flex gap-2 items-center">
+      <span class="font-bold mt-4 border-t pt-6 px-4 flex gap-2 items-center">
         <icon-education /> Education
-      </h2>
+      </span>
       <div class="px-4 flex flex-col gap-6 pt-4 pb-4">
         <div class="">
           <span class="text-gray-400 text-xs"
             >September 2018 - February 2022</span
           >
-          <h3 class="font-semibold my-2">Moi University - Eldoret</h3>
-          <h5 class="text-gray-500 text-sm">Computer Science</h5>
+          <span class="font-semibold my-2 flex">Moi University - Eldoret</span>
+          <span class="text-gray-500 text-sm">Computer Science</span>
         </div>
         <div class="">
           <span class="text-gray-400 text-xs"
             >January 2014 - December 2017</span
           >
-          <h3 class="font-semibold my-2">Mang'u High School - Thika</h3>
-          <h5 class="text-gray-500 text-sm">High School Degree</h5>
+          <span class="font-semibold my-2 flex">Mang'u High School - Thika</span>
+          <span class="text-gray-500 text-sm">High School Degree</span>
         </div>
       </div>
     </article>
 
     <footer class="mt-5 py-4 text-center">
       <div class="flex justify-center gap-8 text-xl pb-4">
-        <a href="https://github.com/Sirkastik" target="_blank"
-          ><icon-github />
+        <a href="https://github.com/Sirkastik" target="_blank">
+          <span class="hidden">github</span>
+          <icon-github />
         </a>
-        <a href="https://www.linkedin.com/in/rioba-victor/" target="_blank"
-          ><icon-linkedin />
+        <a href="https://www.linkedin.com/in/rioba-victor/" target="_blank">
+          <span class="hidden">linkedin</span>
+          <icon-linkedin />
         </a>
         <a
           href="https://www.upwork.com/freelancers/~013fdb2112c2d21183"
           target="_blank"
-          ><icon-upwork />
+        >
+          <span class="hidden">upwork</span>
+          <icon-upwork />
         </a>
       </div>
       <span class="text-sm">
