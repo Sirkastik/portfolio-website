@@ -193,7 +193,7 @@ useSeoMeta({
 
         <div class="border-l-4 pl-4 md:pl-6">
           <span class="flex justify-between">
-            <h3 class="font-bold">Fullstack Engineer</h3>
+            <span class="font-bold">Fullstack Engineer</span>
             <span class="text-xs text-gray-500 font-semibold"
               >Feb 2022 - Nov 2022</span
             >
@@ -270,7 +270,9 @@ useSeoMeta({
           <span class="text-gray-400 text-xs"
             >January 2014 - December 2017</span
           >
-          <span class="font-semibold my-2 flex">Mang'u High School - Thika</span>
+          <span class="font-semibold my-2 flex"
+            >Mang'u High School - Thika</span
+          >
           <span class="text-gray-500 text-sm">High School Degree</span>
         </div>
       </div>
@@ -278,19 +280,25 @@ useSeoMeta({
 
     <footer class="mt-5 py-4 text-center">
       <div class="flex justify-center gap-8 text-xl pb-4">
-        <a href="https://github.com/Sirkastik" target="_blank">
-          <span class="hidden">github</span>
+        <a
+          href="https://github.com/Sirkastik"
+          target="_blank"
+          aria-label="Visit my GitHub profile"
+        >
           <icon-github />
         </a>
-        <a href="https://www.linkedin.com/in/rioba-victor/" target="_blank">
-          <span class="hidden">linkedin</span>
+        <a
+          href="https://www.linkedin.com/in/rioba-victor/"
+          target="_blank"
+          aria-label="Visit my LinkedIn profile"
+        >
           <icon-linkedin />
         </a>
         <a
           href="https://www.upwork.com/freelancers/~013fdb2112c2d21183"
           target="_blank"
+          aria-label="Visit my Upwork profile"
         >
-          <span class="hidden">upwork</span>
           <icon-upwork />
         </a>
       </div>
