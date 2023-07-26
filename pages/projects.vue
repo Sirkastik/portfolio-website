@@ -55,7 +55,7 @@ const projects: Project[] = [
           <a :href="project.github" target="_blank"><icon-github /></a>
         </span>
         <span>{{ project.description }}</span>
-        <div class="flex gap-2">
+        <div class="flex gap-2 flex-wrap">
           <span
             v-for="tag in project.tags"
             :key="tag.title"

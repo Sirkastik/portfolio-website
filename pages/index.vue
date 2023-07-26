@@ -148,7 +148,7 @@ useSeoMeta({
           without the need for traditional college tuition or prerequisites.
         </p>
         <div
-          class="pl-2 flex text-[.8rem] gap-2 text-gray-500 font-semibold py-2"
+          class="pl-2 flex flex-wrap text-[.8rem] gap-2 text-gray-500 font-semibold py-2"
         >
           <span class="border-2 rounded-sm px-3 py-[2px]">Node.js</span>
           <span class="border-2 rounded-sm px-3 py-[2px]">Express</span>
@@ -186,7 +186,7 @@ useSeoMeta({
           the number of monthly active users grew to 6M
         </p>
         <div
-          class="pl-2 flex text-[.8rem] gap-2 text-gray-500 font-semibold py-2"
+          class="pl-2 flex flex-wrap text-[.8rem] gap-2 text-gray-500 font-semibold py-2"
         >
           <span class="border-2 rounded-sm px-3 py-[2px]">Nuxt.js</span>
           <span class="border-2 rounded-sm px-3 py-[2px]">Vue.js</span>
@@ -224,7 +224,7 @@ useSeoMeta({
           shipping integration.
         </p>
         <div
-          class="pl-2 flex text-[.8rem] gap-2 text-gray-500 font-semibold py-2"
+          class="pl-2 flex flex-wrap text-[.8rem] gap-2 text-gray-500 font-semibold py-2"
         >
           <span class="border-2 rounded-sm px-3 py-[2px]">Node.js</span>
           <span class="border-2 rounded-sm px-3 py-[2px]">Express</span>
@@ -264,7 +264,7 @@ useSeoMeta({
           Concardis
         </p>
         <div
-          class="pl-2 flex text-[.8rem] gap-2 text-gray-500 font-semibold py-2"
+          class="pl-2 flex flex-wrap text-[.8rem] gap-2 text-gray-500 font-semibold py-2"
         >
           <span class="border-2 rounded-sm px-3 py-[2px]">Vue.js</span>
           <span class="border-2 rounded-sm px-3 py-[2px]">Nuxt.js</span>
