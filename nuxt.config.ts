@@ -14,7 +14,7 @@ export default defineNuxtConfig({
         {
           name: "tags",
           content: "Software Engineer, Web Developer, Vue.js, Node.js",
-        }
+        },
       ],
       link: [
         {
@@ -26,6 +26,6 @@ export default defineNuxtConfig({
     },
   },
   css: ["@/assets/css/main.css"],
-  modules: ["@nuxtjs/tailwindcss"],
+  modules: ["@nuxtjs/tailwindcss", "@formkit/nuxt"],
   devtools: { enabled: true },
 });
