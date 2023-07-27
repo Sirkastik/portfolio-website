@@ -35,7 +35,7 @@ const projects: Project[] = [
 </script>
 
 <template>
-  <div class="px-4 py-2 md:py-4">
+  <div class="px-4 py-4 mb-auto">
     <ul>
       <li
         v-for="project in projects"
@@ -47,7 +47,7 @@ const projects: Project[] = [
           width="800"
           :src="project.image"
           :alt="`${project.slug}-image`"
-          class="rounded-sm"
+          class="rounded"
         />
         <span class="flex gap-2 text-lg items-center">
           <span class="font-bold w-full">{{ project.title }}</span>

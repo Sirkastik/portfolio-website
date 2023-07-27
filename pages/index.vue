@@ -148,16 +148,16 @@ useSeoMeta({
           without the need for traditional college tuition or prerequisites.
         </p>
         <div
-          class="pl-2 flex flex-wrap text-[.8rem] gap-2 text-gray-500 font-semibold py-2"
+          class="pl-2 flex flex-wrap text-xs md:text-[.8rem] gap-2 text-gray-500 font-semibold py-2"
         >
-          <span class="border-2 rounded-sm px-3 py-[2px]">Node.js</span>
-          <span class="border-2 rounded-sm px-3 py-[2px]">Express</span>
-          <span class="border-2 rounded-sm px-3 py-[2px]">PostreSQL</span>
-          <span class="border-2 rounded-sm px-3 py-[2px]">Airtable</span>
-          <span class="border-2 rounded-sm px-3 py-[2px]">
+          <span class="border-2 rounded-sm px-2 md:px-3 py-[2px]">Node.js</span>
+          <span class="border-2 rounded-sm px-2 md:px-3 py-[2px]">Express</span>
+          <span class="border-2 rounded-sm px-2 md:px-3 py-[2px]">PostreSQL</span>
+          <span class="border-2 rounded-sm px-2 md:px-3 py-[2px]">Airtable</span>
+          <span class="border-2 rounded-sm px-2 md:px-3 py-[2px]">
             Google Cloud Platform
           </span>
-          <span class="border-2 rounded-sm px-3 py-[2px]">Segment</span>
+          <span class="border-2 rounded-sm px-2 md:px-3 py-[2px]">Segment</span>
         </div>
       </div>
 
@@ -186,11 +186,11 @@ useSeoMeta({
           the number of monthly active users grew to 6M
         </p>
         <div
-          class="pl-2 flex flex-wrap text-[.8rem] gap-2 text-gray-500 font-semibold py-2"
+          class="pl-2 flex flex-wrap text-xs md:text-[.8rem] gap-2 text-gray-500 font-semibold py-2"
         >
-          <span class="border-2 rounded-sm px-3 py-[2px]">Nuxt.js</span>
-          <span class="border-2 rounded-sm px-3 py-[2px]">Vue.js</span>
-          <span class="border-2 rounded-sm px-3 py-[2px]">TailwindCSS</span>
+          <span class="border-2 rounded-sm px-2 md:px-3 py-[2px]">Nuxt.js</span>
+          <span class="border-2 rounded-sm px-2 md:px-3 py-[2px]">Vue.js</span>
+          <span class="border-2 rounded-sm px-2 md:px-3 py-[2px]">TailwindCSS</span>
         </div>
       </div>
 
@@ -224,13 +224,13 @@ useSeoMeta({
           shipping integration.
         </p>
         <div
-          class="pl-2 flex flex-wrap text-[.8rem] gap-2 text-gray-500 font-semibold py-2"
+          class="pl-2 flex flex-wrap text-xs md:text-[.8rem] gap-2 text-gray-500 font-semibold py-2"
         >
-          <span class="border-2 rounded-sm px-3 py-[2px]">Node.js</span>
-          <span class="border-2 rounded-sm px-3 py-[2px]">Express</span>
-          <span class="border-2 rounded-sm px-3 py-[2px]">MySQL</span>
-          <span class="border-2 rounded-sm px-3 py-[2px]">Vue.js</span>
-          <span class="border-2 rounded-sm px-3 py-[2px]">
+          <span class="border-2 rounded-sm px-2 md:px-3 py-[2px]">Node.js</span>
+          <span class="border-2 rounded-sm px-2 md:px-3 py-[2px]">Express</span>
+          <span class="border-2 rounded-sm px-2 md:px-3 py-[2px]">MySQL</span>
+          <span class="border-2 rounded-sm px-2 md:px-3 py-[2px]">Vue.js</span>
+          <span class="border-2 rounded-sm px-2 md:px-3 py-[2px]">
             REST API Integration
           </span>
         </div>
@@ -264,12 +264,12 @@ useSeoMeta({
           Concardis
         </p>
         <div
-          class="pl-2 flex flex-wrap text-[.8rem] gap-2 text-gray-500 font-semibold py-2"
+          class="pl-2 flex flex-wrap text-xs md:text-[.8rem] gap-2 text-gray-500 font-semibold py-2"
         >
-          <span class="border-2 rounded-sm px-3 py-[2px]">Vue.js</span>
-          <span class="border-2 rounded-sm px-3 py-[2px]">Nuxt.js</span>
-          <span class="border-2 rounded-sm px-3 py-[2px]">Vuex</span>
-          <span class="border-2 rounded-sm px-3 py-[2px]">
+          <span class="border-2 rounded-sm px-2 md:px-3 py-[2px]">Vue.js</span>
+          <span class="border-2 rounded-sm px-2 md:px-3 py-[2px]">Nuxt.js</span>
+          <span class="border-2 rounded-sm px-2 md:px-3 py-[2px]">Vuex</span>
+          <span class="border-2 rounded-sm px-2 md:px-3 py-[2px]">
             Payment Integration
           </span>
         </div>

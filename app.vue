@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-[800px] mx-auto md:shadow">
+  <div class="max-w-[800px] mx-auto md:shadow min-h-screen flex flex-col">
     <header class="flex justify-between items-center px-4 py-4">
       <nuxt-link to="/" class="flex items-center gap-1">
         <icon-logo class="text-[1.5rem]" />
