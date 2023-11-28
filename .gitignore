@@ -6,9 +6,3 @@ node_modules
 .output
 .env
 dist
-
-assets/icons/cache
-
-assets/svg-transformer-list.ts
-
-assets/dir/cache
