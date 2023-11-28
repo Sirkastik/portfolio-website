@@ -5,11 +5,6 @@
         <icon-logo class="text-[1.5rem]" />
         <span>rioba.dev</span>
       </nuxt-link>
-
-      <div class="flex gap-2 text-[.9em]">
-        <nuxt-link href="/projects">Projects</nuxt-link>
-        <nuxt-link href="/contact">Contact</nuxt-link>
-      </div>
     </header>
 
     <NuxtPage />
