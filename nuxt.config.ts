@@ -25,7 +25,6 @@ export default defineNuxtConfig({
       ],
     },
   },
-  css: ["@/assets/css/main.css"],
-  modules: ["@nuxtjs/tailwindcss", "@formkit/nuxt"],
+  modules: ['@nuxt/ui'],
   devtools: { enabled: true },
 });
